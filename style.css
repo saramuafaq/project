@@ -1,0 +1,875 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* ----------- Navbar ----------- */
+
+body{
+    background-color: #3a3c42;
+}
+
+body::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient( #eee56f, rgb(131, 107, 3));
+    border-radius: 10px;
+}
+
+#title>.fa-home{
+    color: #efe784;
+}
+
+.text-muted a
+{
+    display: block;
+    font-size: 1.2em;
+    color:  #efe784;
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+.text-muted a:hover
+{
+    font-weight: bolder;
+    background-color: #1d1e1ffa;
+    border-radius: 15px;
+}
+
+#title i{
+    color: rgb(248, 203, 3);
+}
+
+#title { display: flex;}
+#title a 
+{
+    color: whitesmoke;
+    margin-left: auto;
+}
+
+#title i
+{
+    color: whitesmoke;
+    font-size: 2em;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+#logo{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#liveNote{
+    font-size: 2em;
+    color: red;
+}
+
+#liveNote2{
+    font-size: 1.5em;
+    color: red;
+}
+
+.modal-content{
+    background-color: lightgrey;
+}
+
+.modal-body form input, 
+.modal-body form label,
+.modal-body form select{ 
+    display: block;
+    padding: 10px;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+}
+
+.modal-body form input:focus{ background-color: rgb(220, 233, 232); transition: all 0.4s}
+.modal-body form input:focus::placeholder{ color: rgb(43, 42, 42); }
+
+.modal-footer {
+    justify-content: space-around;
+}
+
+.modal-footer button{
+    width: 70%;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.disabled-link {
+    color: gray;
+    pointer-events: none;
+   }
+
+/* ---------- Navbar ------------ */
+
+
+
+
+
+
+/* ---------- Welcome Part ------------ */
+#welcome-parent{
+    position: relative;
+}
+
+#welcome-video-container{
+    z-index: -1;
+}
+
+#welcome-video{
+    width: 100%;
+    height: 100%;
+}
+/* 
+#welcome-text{
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: darkgoldenrod;
+    font-size: 4em;
+    font-weight: 400;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.8);
+} */
+
+/* ---------- End Of Welcome Part ------------ */
+
+
+
+
+
+
+
+/* ------------------ Newests ------------------ */
+
+#newests{
+    display: flex;
+    width: 99%;
+    max-height: 650px;
+    height: 650px;
+    margin: -4px auto;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.card-header{ text-align: center;}
+
+
+#left-newest, #right-newest{
+    width: 35%; 
+    height: 100%;
+    /* overflow-y: auto; */
+}
+
+#right-newest .card .card-header .btn-sm{
+    height: 40px; 
+    background-color: #e0c171;
+    color: black;
+    font-weight: 600;
+}
+
+#right-newest .card .card-header .btn-sm:hover{
+    background-color: #8f783e;
+}
+
+#left-newest{
+    margin-right: 10px;
+}
+
+.newest-items{
+    overflow-y: auto;
+    height: 100%;
+    padding: 0;
+    padding-right: 10px;
+}
+
+.news-single-items{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    border: 1px solid black;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.news-single-items a img{
+    width: 200px;
+    height: 100%;
+}
+
+.news-single-items a{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.texts{
+    padding: 10px;
+}
+
+.news-single-items span[id*="time-of-posted"]{
+    position: absolute;
+    bottom: 2px;
+    right: 5px;
+    color: black;
+}
+
+.news-single-items span[id*="posted-by-"]{
+    position: absolute;
+    bottom: 2px;
+    left: 210px;
+}
+
+.news-single-items span, .news-single-items span a { color: black;}
+
+.hr{
+    width: 400px;
+    margin: 0 auto;
+    height: 10px;
+    color: lightcoral;
+}
+
+
+
+#newests .card{
+    height: 95%;
+}
+
+#newests .card-body{
+    overflow-y: auto;
+    background-color: #eeeeee;
+    /* background-color: #ac745a; */
+    margin: 0;
+    padding: 7px;
+}
+
+#newests #left-newest .card .newest-items::-webkit-scrollbar,
+#newests #right-newest .card .newest-items::-webkit-scrollbar{
+    width: 6px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+#newests #left-newest .card .newest-items::-webkit-scrollbar::-webkit-scrollbar-track,
+#newests #right-newest .card .newest-items::-webkit-scrollbar{
+    background-color: lightgray;    
+}
+
+#newests  .card-header{
+    background-color: lightgray;
+}
+/* ------------------ End Of Newests Part ----------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- Subjects Part ------------ */
+
+#subject-section{ margin-top: 10px;}
+
+#subject-section h1{
+    text-align: center;
+    color: #efe784;
+    font-size: 4em;
+    padding: 20px 0;
+}
+
+#subject-items{
+    text-align: center;
+}
+
+#subject-items button{
+    font-size: 3em;
+    color: goldenrod;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: 700;
+}
+
+#subject-items button:hover{
+    color: rgb(116, 88, 11);
+}
+
+.subject-divs{
+    display: flex;
+}
+
+.img-containers{
+    position: relative;
+    width: 30%;
+    height: 300px;
+    display: flex;
+    margin: 15px auto;
+}
+
+.img-containers img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.img-containers .hoverable-div {
+    background-color: rgba(44, 41, 41, 0.9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: rgb(216, 210, 196);
+ }
+ 
+
+.opacityDiv h2{
+    text-decoration: none;
+    color: white;
+    margin-top: 20%;
+    font-size: 2.3em;
+    padding: 10px;
+    border: 2px solid chocolate;
+    display: inline-block;
+    border-radius: 15px;
+    opacity: 0;
+}
+
+.opacityDiv:hover h2{
+    opacity: 1;
+    transition: opacity;
+    transition-delay: 0.08s;
+}
+
+.opacityDiv{
+    background-color: rgba(44, 41, 41, 0.9);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(216, 210, 196);
+    
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .5s;
+}
+
+.img-containers:hover .opacityDiv{ 
+    opacity: 1; 
+    /* transition: 0.5s;  */
+    animation-name: anim;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes anim{
+    0%   {height: 0%;}
+    15%   {height: 15%;}
+    30%   {height: 30%;}
+    45%   {height: 45%;}
+    60%  {height: 60%;}
+    75%  {height: 75%;}
+    90%  {height: 90%;}
+    100% {height: 100%;}
+}
+
+ .btn-danger{
+     border: 1px double white;
+     background-color: rgba(0, 0, 0, 0.349);
+ }
+/* ---------- End Of Subjects Part ------------ */
+
+#parallax1{
+    background-image: url(media/Images/compute.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    width: 100%;
+    height: 650px;
+}
+
+
+/* --------------- contact us --------------- */
+#contact-container{
+    display: flex;
+    height: 100%;
+    border: 4px solid lightgray;
+}
+
+#map{
+    width: 50%;
+    height: auto;
+    background-color: lightblue;
+}
+
+#map iframe{
+    width: 100%;
+    height: 100%;
+}
+/* 
+#form{
+    width: 50%;
+    height: 100%;
+    background-color: #ac745a;
+    text-align: center;
+    padding: 15px 0;
+    color: black;
+}
+
+
+#form form input, #form form textarea{
+    width: 80%;
+    min-width: 150px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 1px;
+    font-size: 1.1em;
+    border: 2px solid rgb(77, 74, 74);
+    resize: none;
+    outline: none;
+}
+
+#send{
+    width: 70%;
+    height: 55px;
+    background-color: lightgray;
+    font-size: 1.8em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#send:hover{
+    background-color: gray;
+    border-radius: 20px;
+}
+
+#form form textarea{
+    height: 125px;
+}
+
+#form form input{
+    height: 40px;
+} */
+
+
+#form{
+    width: 50%;
+    height: 100%;
+    background-color: #3a3c42;
+    text-align: center;
+    padding: 15px 10px;
+    color: white;
+    text-align: left;
+}
+
+
+#form form input{
+    width: 30%;
+    min-width: 150px;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    padding: 0px 5px;
+    font-size: 14px;
+    border: 1px solid rgb(77, 74, 74);
+    height: 10px;
+    
+}
+
+#form form h2{
+    font-size: 1.5em;
+    padding-bottom: 30px;
+    font-weight: 600;
+}
+
+#form form textarea{
+    width: 60%;
+    min-width: 150px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    padding: 1px;
+    font-size: 14px;
+    border: 1px solid rgb(77, 74, 74);
+    resize: none;
+    outline: none;
+}
+
+#send{
+    width: 10%;
+    background-color: gray;
+    font-size: 1em;
+    color: rgb(248, 203, 3);
+    border:none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 15%;
+
+}
+
+#send:hover{
+    color: white;
+}
+
+#form form textarea{
+    height: 125px;
+}
+
+#form form input{
+    height: 30px;
+}
+
+/* ------------------- End of contact us --------------- */
+#footer{
+    text-align: center;
+    height: 30px;
+    background-color: black;
+    color: whoverable-divte;
+    padding: 5px 0;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================================================================================= */
+
+
+
+
+
+/* =========== SUBJECTS PAGE =========== */
+
+#subject-lists div{
+    margin: 8px;
+    width: 90%;
+    height: 100px;
+    /* background-color: #ac745a; */
+    background-color: lightgray;
+    color: black;
+    border-radius: 5px;
+}
+
+#subject-lists div img{
+    width: 210px;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.display-flex{
+    display: flex;
+    color: white;
+}
+
+
+.display-flex h2, .display-flex h3{ margin: auto auto;}
+
+.col-7 .display-flex a{
+    display: none;
+    border: 1px solid rgb(75, 73, 73);
+    margin-left: 8%;
+    width: 110px;
+    height: 58px;
+    color: black;
+    font-weight: 400;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 6px;
+    font-size: 1.4em;
+    background-color: #efe784;
+    padding-top: 12px;
+}
+
+.col-7 .display-flex a{
+    outline: none;
+}
+
+.col-7 .display-flex:hover h2{ 
+    display: none;
+}
+.col-7 .display-flex:hover a { 
+    display: inline;
+    border: 2px solid black;
+}
+
+.col-7 .display-flex a:hover{
+    background-color: #6d6a3e;
+}
+
+#left-part-subjects{ 
+    margin-bottom: 10px;
+}
+
+#left-part-subjects a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    padding: 6px;
+    font-weight: 400;
+    display: block;
+}
+
+#left-part-subjects a:hover{
+    background-color: gray;
+    color: black;
+}
+
+#list-of-books{
+    border-left: 2px solid lightgray;
+}
+
+#books-part .card-footer a{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+#list-of-books #books-part .card-body .info{
+    border-top: 2px solid lightgray;
+    display: flex;
+    justify-content: space-around;
+}
+
+#books-part .card-body{ 
+    display: block; 
+    text-align: center;
+}
+
+#list-of-books .card{ margin-bottom: 15px;}
+
+#list-of-books>h3, #subject-lists>h3, 
+#list-of-subjects-in-subject-page>h3, 
+#list-of-subjects-in-video-page>h2{
+    text-align: center;
+    color: #948c1a;
+}
+
+#list-of-subjects-in-subject-page{
+    border-right: 2px solid rgb(245, 200, 200);
+    background-color: #eeeeee;
+}
+
+
+
+
+
+
+/* ========================================================================== */
+
+
+
+
+
+
+ 
+ 
+
+ 
+
+/* =========== SUBJECTS PAGE(for OOP & Procedure programming subjects) =========== */
+
+#subject-lists-of-categorised-programming a{
+    margin: 8px;
+    width: 90%;
+    height: 130px;
+    background-color: lightgray;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#subject-lists-of-categorised-programming a:hover h2{
+    transform: scale(1.1);
+    text-shadow: 2px 6px 8px #000000;
+    transition: all 0.5s;
+}
+
+#subject-lists-of-categorised-programming a img{
+    width: 260px;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+
+
+
+
+/* =========== END OF   SUBJECTS PAGE(for OOP & Procedure programming subjects) =========== */
+
+
+
+
+
+
+
+
+
+/* ============================================================================================= */
+/* ------ Video PAGE ------ */
+
+/* .videos{
+    border: 2px solid #eeeeee;
+    background-color: whitesmoke;
+    width: 380px;
+    height: 250px;
+    max-height: 250px;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    color: black;
+} */
+
+/* .videos iframe{
+    width: 100%;
+    height: 85%;
+} */
+
+    
+
+#list-of-subjects-in-video-page, #list-of-subjects-in-text-page, #list-of-subjects-in-audio-page{
+    background-color: lightgray;
+    color: rgb(177, 124, 124);
+}
+
+#list-of-subjects-in-video-page{
+    width: 240px; height: 100%;
+}
+
+#right-part-of-video-page{
+    width: 100%; height: 100%;
+    padding-left: 1%;
+    margin-left: 3px; 
+}
+
+#right-part-of-video-page div{
+    margin: 15px;
+    height: 200px; 
+    background-color: #d3d3d3;
+}
+ 
+#right-part-of-video-page div table tr th{
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+/* ============================================================================================= */
+/* ------ Texts PAGE ------ */
+
+#texts .col-md-3 .card{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#texts-table{
+    width: 100%;
+}
+
+.fa-file-alt{
+    font-size: 2em;
+}
+
+
+
+
+
+
+
+
+/* ============================================================================================= */
+/* ------ Audio PAGE ------ */
+
+#audio-table{
+    width: 100%;
+}
+
+.fa-volume-up{
+    font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.row .col-2 h2{
+    color: white;
+    font-weight: 500;
+}
+
+
+/* 
+Krmanj */
+
+.feedBackins{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.feedBackins h3{
+    width: 15%;
+    font-size: 14px;
+}
+
+#name , #email{
+    width: 50%;
+}
+
+

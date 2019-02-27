@@ -1,0 +1,31 @@
+h1.green {
+    background-color: gray;
+    font-size: 3em;
+    text-align: center;
+    color: pink;
+}
+a{
+    margin-left: 10px;
+    margin: 10px;
+    background-color: palevioletred;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: monospace;
+}
+a:hover{
+    color: pink;
+    background-color: gray;
+    padding: 20px;
+    
+}
+a:active{
+    color: black;
+    background-color: beige;
+}
+
+a:visited{
+    color: deeppink;
+    background-color: black;
+}
